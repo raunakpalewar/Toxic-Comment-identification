@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sytle.css') }}">
+    <link href="https://fonts.cdnfonts.com/css/russian" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <title>toxiscan.com</title> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+       $(function() {
+           $("#navbar").load("{{ url_for('static', filename='navbar.html') }}");
+           $("#footer").load("{{ url_for('static', filename='footer.html') }}");
+       });
+  </script>
+</head>
+
+<body style="font-family: 'Trebuchet MS', sans-serif;">
+    <header class="header1">
+        <div id="navbar" ></div>
+
+
+    </header>
+    <main>
+        <section>
+            <div class="div27">
+                <h3>1. Please select either of the option   </h3>
+                <img src="{{ url_for('static', filename='assets/op1.png') }}" class="img3" alt="index image">
+            </div>
+            <div class="div27">
+                <h3>2. To check toxicity please enter the "Comment" in textbox and click the check button </h3>
+                <img src="{{ url_for('static', filename='assets/op4.png') }}" class="img3">
+            </div>
+            <div class="div27">
+                <h3>3. To Paraphrase the please enter the "Comment" in textbox and click the Button.<br>You can Then Pick the new Sentence from Numerous Choices. </h3>
+                <img src="{{ url_for('static', filename='assets/op3.png') }}" class="img3">
+            </div>
+            
+            <div>
+                <div class="div28">
+                    <h1 class="heading2">
+                        Detail Description about the Techniques Used
+                    </h1>
+                    <div class="p12">
+                        <h3 class="heading">
+                            1. Python
+                        </h3>
+                        <h5>
+                            Python is a high-level, interpreted programming language known for its simplicity and
+                            readability. It was first released in 1991 by Guido van Rossum and has since become one of the
+                            most popular programming languages in the world. Python's syntax emphasizes code readability and
+                            ease of use, making it an ideal choice for beginners and experienced programmers alike. It
+                            supports multiple programming paradigms, including procedural, object-oriented, and functional
+                            programming. Python has a vast standard library and a large and active community of users who
+                            contribute to a wide range of third-party libraries, making it suitable for a variety of
+                            applications, from web development to scientific computing and machine learning.
+                        </h5>
+                    </div>
+                    <div class="p13">
+                    <h3 class="heading">
+                        2. Deep learning
+                    </h3>
+                    <h5>
+                        Deep learning is a subset of machine learning that involves training artificial neural networks
+                        with multiple layers to perform tasks such as image recognition, natural language processing,
+                        and decision making. Deep learning models are based on the structure and function of the human
+                        brain, with the artificial neural networks consisting of interconnected nodes that process and
+                        transmit information. These networks are trained using large amounts of labeled data to learn
+                        complex patterns and relationships, which can then be used to make predictions or classify new
+                        data. Deep learning has revolutionized many fields, including computer vision, speech
+                        recognition, and natural language processing, and has enabled significant advances in areas such
+                        as autonomous vehicles, medical diagnosis, and robotics.
+                    </h5>
+                </div>
+                    <div class="p12">
+                    <h3 class="heading">
+                        3. NLP
+                    </h3>
+                    <h5>
+                        NLP, or Natural Language Processing, is a subfield of artificial intelligence that deals with
+                        the interaction between computers and human language. NLP involves developing algorithms and
+                        techniques that allow computers to understand, interpret, and generate human language. This
+                        includes tasks such as sentiment analysis, speech recognition, text classification, language
+                        translation, and information extraction. NLP utilizes techniques from linguistics, computer
+                        science, and statistics to analyze and model language data. With the explosive growth of digital
+                        content, NLP has become increasingly important for enabling machines to understand and interact
+                        with human language, and has a wide range of applications in industries such as healthcare,
+                        finance, and customer service.
+                    </h5>
+                    </div>
+                   
+                    <div class="p13">
+                    <h3 class="heading">
+                        4. CNN & word embedding
+                    </h3>
+                    <h5>
+                        CNN, or Convolutional Neural Network, is a type of artificial neural network commonly used in
+                        computer vision and image processing. It is designed to automatically and efficiently recognize
+                        patterns in images by using convolutional layers that apply filters to small portions of the
+                        input image, detecting features such as edges, corners, and shapes. CNNs have achieved
+                        state-of-the-art performance in image classification, object detection, and image segmentation.
+                   
+                    <br>
+                    Word embedding is a technique used in natural language processing to represent words as vectors in a
+                    high-dimensional space. It is based on the idea that words with similar meanings tend to occur in
+                    similar contexts and therefore should have similar vector representations. Word embedding models,
+                    such as Word2Vec and GloVe, are trained on large corpora of text to learn the vector representations
+                    of words that capture their semantic and syntactic properties. Word embedding has become a popular
+                    method for representing text data in machine learning applications, including sentiment analysis,
+                    language translation, and information retrieval.
+                </h5>
+                </div>
+                    <div class="p12">
+                    <h3 class="heading">
+                        5. Bidirectional Convolutional Neural Network
+                    </h3>
+                    <h5>
+                        In a Bidirectional Convolutional Neural Network (BiCNN), the input data is processed in both
+                        forward and backward directions, allowing the network to capture information from both past and
+                        future contexts. This is achieved by using two separate convolutional layers, one processing the
+                        input sequence in the forward direction and the other processing it in the backward direction.
+                        The output of each layer is then combined to produce the final output of the network. BiCNNs are
+                        commonly used in natural language processing tasks, such as sentiment analysis and language
+                        translation, where the meaning of a word or phrase can be influenced by the context that
+                        precedes or follows it. By processing the input in both directions, BiCNNs are able to capture
+                        more complex dependencies between the input data and improve the accuracy of the model.
+                    </div>
+                    <div class="p13">
+                        <h3 class="heading">
+                            6. HTML CSS JS
+                        </h3>
+                        <h5>
+                            HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript (JS) are the three core technologies used for creating websites and web applications.
+                         <br><br>
+                            1. HTML is used for creating the structure and content of web pages. It consists of a set of tags that describe the various elements on a webpage, such as headings, paragraphs, images, links, and forms.
+                            <br><br>2. CSS is used for styling the appearance of HTML elements. It allows developers to define styles for fonts, colors, layout, and other visual aspects of a web page. CSS works by selecting HTML elements and applying styles to them.
+                           <br><br>3. JavaScript is a scripting language used for creating interactive and dynamic web pages. It allows developers to add functionality to web pages, such as form validation, animations, and interactivity. JavaScript can also be used to interact with APIs and manipulate the DOM (Document Object Model).
+                            Together, HTML, CSS, and JavaScript form the foundation for building modern web applications.
+                        </P>
+                        </div>
+                        <div class="p12">
+                            <h3 class="heading">
+                                7. Flask
+                            </h3>
+                            <h5>
+                                Flask is a popular lightweight web application framework written in Python. It allows developers to build web applications quickly and efficiently, with minimal setup and boilerplate code. Flask provides tools and libraries for handling HTTP requests, rendering HTML templates, managing sessions, and more. It is also highly extensible, allowing developers to add custom functionality through third-party extensions. Flask is often used for building small to medium-sized web applications, RESTful APIs, and prototypes.
+                            </div>
+
+                </div>
+            </div>
+            <div class="div29">
+                <table class="">
+                    <tr class="t " >
+                        <th class="t t1 tc1">Sr. No.</th>
+                        <th class="t t1 tc2">Title</th>
+                        <th class="t t1 tc3">Link</th>
+                    </tr>
+                    <tr class="t">
+                        <td class="t t3">1</td>
+                        <td class="t t2">Paper on " Toxic comment IDENTIFICATION"</td>
+                        <td class="t t2 ico1">
+                            <a href="{{ url_for('static', filename='assets/Toxic Comment Identification using NLP.pdf') }}">
+                                <i class="fa fa-file-pdf-o fa-2x" ></i>
+                                <iframe class="ifr" src="{{ url_for('static', filename='assets/Toxic Comment Identification using NLP.pdf') }}" >
+                                </iframe>
+                                
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="t">
+                        <td class="t t3">2</td>
+                        <td class="t t2">Poster on "Toxic Comment IDENTIFICATION"</td>
+                        <td class="t t2 ico1">
+                            <a href="{{ url_for('static', filename='assets/Vertical_Template for Poster Presentation RAMMML-2023 (3ft by 4ft)[1].png') }}">
+                                <i class="fa fa-image fa-2x align-bottom" ></i>
+                                <img src="{{ url_for('static', filename='assets/Vertical_Template for Poster Presentation RAMMML-2023 (3ft by 4ft)[1].png') }}" class="img4" alt="poster"> 
+                                
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="t">
+                        <td class="t t3">3</td>
+                        <td class="t t2">Dataset Used</td>
+                        <td class="t t2 ico1">
+                            <a href="{{ url_for('static', filename='assets/train1.pdf') }}">
+                                <i class="fa fa-file-pdf-o fa-2x" ></i>
+                                <iframe class="ifr" src="{{ url_for('static', filename='assets/train1.pdf') }}" >
+                                </iframe>
+                                
+                            </a>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </section>
+        <div id="footer" ></div>
+    </main>
+</body>
+
+</html>

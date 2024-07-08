@@ -1,0 +1,2 @@
+First run requirements file by pip command 'pip install -r requirements.txt'.
+then run app.py file

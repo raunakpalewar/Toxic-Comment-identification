@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sytle.css') }}">
+    <link href="https://fonts.cdnfonts.com/css/russian" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>toxiscan.com</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+     <script>
+        $(function() {
+            $("#navbar").load("{{ url_for('static', filename='navbar.html') }}");
+            $("#footer").load("{{ url_for('static', filename='footer.html') }}");
+        });
+   </script>
+</head>
+
+<body style="font-family: 'Trebuchet MS', sans-serif;">
+    <header class="header1">
+        <div id="navbar" ></div>
+
+
+
+    </header>
+    <main>
+        <section>
+            <div class="div19">
+                <p class="p7">
+                    About the Project
+                </p>
+                <p class="p8">
+                    Toxic comments are those that are seen in online forums that are impolite, disrespectful, or unjust and frequently drive many members to leave the topic. People's access to opposing viewpoints is restricted by the possibility of cyberbullying and harassment, inhibiting a free exchange of ideas.
+                    The goal is to create a classifier model that can predict if input text is inappropriate (toxic). The purpose of this module is to evaluate the statement's level of toxicity and decide whether it should remain online or to be changed. To research & analyses the spectrum of online abuse and classify it into several classes in order to apply machine learning techniques to assess the toxicity as exactly as feasible.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 div20">
+                    <div class="div21">
+                    <p class="p10">
+                        Proposed Word
+                    </p>
+                    <p class="p9 text-center">
+                        A main area of focus is machine learning models that can identify toxicity in online conversations, where toxicity is defined as anything rude, disrespectful or otherwise likely to make someone leave a discussion.
+                        We are Building a model that recognizes toxicity and minimizes this type of unintended bias with respect to mentions of identities. You'll be using a dataset labeled for identity mentions and optimizing a metric designed to measure unintended bias. Develop strategies to reduce unintended bias in machine learning models, and you'll help the Conversation AI team, and the entire industry, build models that work well for a wide range of conversations.
+                    </p>
+                    </div>
+
+                </div>
+                <div class="col-sm-5 div20 ">
+                    <div class="div21">
+                    <p class="p10">
+                        Applicability
+
+                    </p>
+                    <p class="p9 text-left lh-lg">
+                        o Finding Toxic Comment on Social Media Platform
+                        <br>
+
+                        o Child and Women Safety
+                        <br>
+
+                        o Avoiding Mass Trolling
+                        <br>
+                        o Making the conversation sound Respectful
+                        <br>
+                        o Helps in decreasing online hetaerism
+
+                    </p>
+                </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row div22 ">
+                <p class="div14">Tecnhologies Used</p>
+                <div class="col-sm-3">
+                    <img src="{{ url_for('static', filename='assets/AI-Motherboard-scaled.webp') }}" alt="" class="img2">
+                    <p>Artificial Intelligence</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="{{ url_for('static', filename='assets/machine-learning-examples-applications.png') }}"alt=""  class="img2">
+                    <p>Data Science</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="{{ url_for('static', filename='assets/nlp.png') }}" alt="" class="img2">
+                    <p>NLP</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="{{ url_for('static', filename='assets/html css js.png') }}" alt="" class="img2">
+                    <p>HTML - CSS - JS </p>
+                </div>
+
+            </div>
+        </section>
+        <div id="footer" ></div>
+    </main>
+</body>
+
+</html>
