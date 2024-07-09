@@ -5,7 +5,7 @@
 ToxiScan is a web application designed to detect toxic comments using advanced deep learning techniques. Our goal is to provide a reliable and accurate solution for identifying harmful and offensive content in online discussions, thereby promoting a safer and more inclusive online environment.
 
 
-![ToxiScan Screenshot](images/screenshot.png)
+![ToxiScan Screenshot](/Toxic-Comment-identification/screenshot.png)
 
 ## Features
 
